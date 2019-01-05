@@ -1,0 +1,26 @@
+use jadrn045;
+
+drop table if exists Runner;
+
+create table Runner(
+   
+    fname varchar(50) NOT NULL,
+   	mname varchar(50),
+    lname varchar(50) NOT NULL,
+    address varchar(100) NOT NULL,
+    city varchar(30) NOT NULL,
+    state char(2) NOT NULL,
+    zip char(5) NOT NULL,
+    email varchar(50) NOT NULL,
+    contactno varchar(12) NOT NULL,
+    gender varchar(6) NOT NULL,
+    dob varchar(10) NOT NULL,
+    medcond varchar(200),
+    category varchar(6) NOT NULL,
+    experience varchar(11) NOT NULL,
+    profilepic varchar(50) NOT NULL
+    ); 
+    
+INSERT INTO Runner VALUES('jim',' ' ,'Robeson','3456 30th St','San Diego','CA','92104','jrobeson@yahoo.com','123-765-0987','male','1993-09-08','na','Adult','Expert','me.jpg');
+
+INSERT INTO Runner VALUES('Robert','A','Jones','1512 Abbott St','San Diego','CA','92106','rjones@gmail.com','127-765-0937','male','1970-09-10',' ','Senior','Novice','dp.jpg');
